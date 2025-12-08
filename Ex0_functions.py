@@ -30,6 +30,10 @@ print("-------------------------------------------\n"
 # Then call the function by writing: greet()
 #
 # Write your code below:
+def greet():
+      print("Hello, World!")
+
+greet()
 
 
 # -------------------------------------------
@@ -54,7 +58,11 @@ print("-------------------------------------------\n"
 # Hello, Bob!
 #
 # Write your code below:
+def greet_person(name):
+      print(f"Hello, {name}!")
 
+greet_person("Alice")
+greet_person("Bob")
 
 # -------------------------------------------
 # Task 3: Adding Two Numbers
@@ -75,6 +83,10 @@ print("-------------------------------------------\n"
 # 8
 #
 # Write your code below:
+def add_numbers(num1, num2):
+      return num1 + num2
+result = add_numbers(5, 3)
+print(result)
 
 
 # -------------------------------------------
@@ -96,7 +108,10 @@ print("-------------------------------------------\n"
 # You are 25 years old
 #
 # Write your code below:
-
+def calculate_age(birth_year):
+      return 2025 - birth_year
+age = calculate_age(1971)
+print(f"You are {age} years old")
 
 # -------------------------------------------
 # Task 5: Check if Even
@@ -119,8 +134,10 @@ print("-------------------------------------------\n"
 # False
 #
 # Write your code below:
-
-
+def is_even(number):
+      return number % 2 == 0
+print(is_even(8))
+print(is_even(7))
 # -------------------------------------------
 # Task 6: Price with Tax
 # -------------------------------------------
@@ -142,6 +159,11 @@ print("-------------------------------------------\n"
 # Final price: £12.0
 #
 # Write your code below:
+def add_tax(price):
+      total = price * 1.20
+      return round(total, 2)
+final_price = add_tax(10.00)
+print(f"Final price: £ {final_price}")
 
 
 # -------------------------------------------
@@ -165,7 +187,13 @@ print("-------------------------------------------\n"
 # 100
 #
 # Write your code below:
-
+def find_max(a,b):
+      if a > b:
+            return a
+      else:
+            return b
+print(find_max(15,23))
+print(find_max(100, 50))
 
 # -------------------------------------------
 # Task 8: Repeat Message
@@ -188,7 +216,10 @@ print("-------------------------------------------\n"
 # Python is fun!
 #
 # Write your code below:
-
+def repeat_message(message, times):
+      for i in range(times):
+            print(f"{message}")
+repeat_message("Python is fun!", 3)
 
 # -------------------------------------------
 # Well Done!
